@@ -59,6 +59,12 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        setUI()
+    }
+    
+    // MARK: - UI Setup
+
+    func setUI() {
         
         view.addSubview(titleLabel)
         view.addSubview(imageView)
@@ -94,7 +100,6 @@ class DetailsViewController: UIViewController {
         textLabel.text = text
         timeLabel.text = timeText
     }
-    
     // MARK: - Image Loading
     
     private func loadImage(from url: URL) {
