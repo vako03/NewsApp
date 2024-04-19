@@ -10,9 +10,13 @@
 		3AC647FF2BD2145A00610FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC647FE2BD2145A00610FE1 /* AppDelegate.swift */; };
 		3AC648012BD2145A00610FE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC648002BD2145A00610FE1 /* SceneDelegate.swift */; };
 		3AC648032BD2145A00610FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC648022BD2145A00610FE1 /* ViewController.swift */; };
-		3AC648062BD2145A00610FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC648042BD2145A00610FE1 /* Main.storyboard */; };
 		3AC648082BD2145E00610FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC648072BD2145E00610FE1 /* Assets.xcassets */; };
-		3AC6480B2BD2145E00610FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC648092BD2145E00610FE1 /* LaunchScreen.storyboard */; };
+		3AC648152BD21A2800610FE1 /* APICallers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC648142BD21A2800610FE1 /* APICallers.swift */; };
+		3AC648172BD21BC700610FE1 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC648162BD21BC700610FE1 /* NewsItemCell.swift */; };
+		3AC648192BD2457800610FE1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC648182BD2457800610FE1 /* DetailsViewController.swift */; };
+		3AC6483B2BD2938300610FE1 /* FiraGO-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AC6483A2BD2938300610FE1 /* FiraGO-Regular.ttf */; };
+		3AC6483F2BD2963700610FE1 /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AC6483E2BD2963600610FE1 /* SpaceGrotesk-Bold.ttf */; };
+		3AC648412BD297B900610FE1 /* FiraGO-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AC648402BD297B900610FE1 /* FiraGO-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		3AC647FE2BD2145A00610FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC648002BD2145A00610FE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3AC648022BD2145A00610FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3AC648052BD2145A00610FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AC648072BD2145E00610FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3AC6480A2BD2145E00610FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC6480C2BD2145E00610FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC648142BD21A2800610FE1 /* APICallers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallers.swift; sourceTree = "<group>"; };
+		3AC648162BD21BC700610FE1 /* NewsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
+		3AC648182BD2457800610FE1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3AC6483A2BD2938300610FE1 /* FiraGO-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Regular.ttf"; sourceTree = "<group>"; };
+		3AC6483E2BD2963600610FE1 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		3AC648402BD297B900610FE1 /* FiraGO-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		3AC647FD2BD2145A00610FE1 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				3AC647FE2BD2145A00610FE1 /* AppDelegate.swift */,
-				3AC648002BD2145A00610FE1 /* SceneDelegate.swift */,
-				3AC648022BD2145A00610FE1 /* ViewController.swift */,
-				3AC648042BD2145A00610FE1 /* Main.storyboard */,
-				3AC648072BD2145E00610FE1 /* Assets.xcassets */,
-				3AC648092BD2145E00610FE1 /* LaunchScreen.storyboard */,
+				3AC648422BD2C2A700610FE1 /* App */,
+				3AC648452BD2C45900610FE1 /* Scenes */,
+				3AC648442BD2C43B00610FE1 /* API */,
+				3AC648432BD2C39400610FE1 /* Cells */,
+				3AC648462BD2C49100610FE1 /* Fonts */,
 				3AC6480C2BD2145E00610FE1 /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		3AC648422BD2C2A700610FE1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3AC647FE2BD2145A00610FE1 /* AppDelegate.swift */,
+				3AC648002BD2145A00610FE1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3AC648432BD2C39400610FE1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3AC648162BD21BC700610FE1 /* NewsItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AC648442BD2C43B00610FE1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3AC648142BD21A2800610FE1 /* APICallers.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3AC648452BD2C45900610FE1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3AC648022BD2145A00610FE1 /* ViewController.swift */,
+				3AC648182BD2457800610FE1 /* DetailsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3AC648462BD2C49100610FE1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3AC6483A2BD2938300610FE1 /* FiraGO-Regular.ttf */,
+				3AC6483E2BD2963600610FE1 /* SpaceGrotesk-Bold.ttf */,
+				3AC648402BD297B900610FE1 /* FiraGO-SemiBold.ttf */,
+				3AC648472BD2C4AE00610FE1 /* Other */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3AC648472BD2C4AE00610FE1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3AC648072BD2145E00610FE1 /* Assets.xcassets */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +185,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC6480B2BD2145E00610FE1 /* LaunchScreen.storyboard in Resources */,
+				3AC648412BD297B900610FE1 /* FiraGO-SemiBold.ttf in Resources */,
 				3AC648082BD2145E00610FE1 /* Assets.xcassets in Resources */,
-				3AC648062BD2145A00610FE1 /* Main.storyboard in Resources */,
+				3AC6483F2BD2963700610FE1 /* SpaceGrotesk-Bold.ttf in Resources */,
+				3AC6483B2BD2938300610FE1 /* FiraGO-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,31 +200,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC648032BD2145A00610FE1 /* ViewController.swift in Sources */,
+				3AC648152BD21A2800610FE1 /* APICallers.swift in Sources */,
 				3AC647FF2BD2145A00610FE1 /* AppDelegate.swift in Sources */,
 				3AC648012BD2145A00610FE1 /* SceneDelegate.swift in Sources */,
+				3AC648172BD21BC700610FE1 /* NewsItemCell.swift in Sources */,
+				3AC648192BD2457800610FE1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3AC648042BD2145A00610FE1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AC648052BD2145A00610FE1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3AC648092BD2145E00610FE1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AC6480A2BD2145E00610FE1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3AC6480D2BD2145E00610FE1 /* Debug */ = {
@@ -292,7 +337,6 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +364,6 @@
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
